@@ -3,30 +3,29 @@
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
+/* Navigation */
 .nav .nav-link::before {
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
+/* Button */
 .button:hover {
   transition-duration: var(--transition-duration);
   transition-property: color, background-color;
 }
 
+/* Card inner */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Card image (transition + transform dans hover comme demandé) */
 .card-work:hover .card-image {
   transform: scale(1.2);
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-
-.card-work .card-image {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-
+/* Card outer */
 .card-work:hover .card-outer {
   transform: scale(0.95);
-}
-
-.card-work .card-inner {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
