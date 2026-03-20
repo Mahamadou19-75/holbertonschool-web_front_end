@@ -17,6 +17,12 @@
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
+
+.card-work .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+
 .card-work:hover .card-outer {
   transform: scale(0.95);
 }
