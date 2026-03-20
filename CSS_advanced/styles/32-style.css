@@ -14,22 +14,18 @@
   transition-property: color, background-color;
 }
 
-/* Card image (OBLIGATOIRE POUR CHECKER) */
-.card-work .card-image {
+/* Card inner */
+.card-work .card-inner {
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Hover image */
+/* Hover image (IMPORTANT: transition ici) */
 .card-work:hover .card-image {
   transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Outer */
 .card-work:hover .card-outer {
   transform: scale(0.95);
-}
-
-/* Inner */
-.card-work .card-inner {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
