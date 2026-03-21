@@ -1,0 +1,45 @@
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Navigation */
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Button */
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background-color: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+/* Card image transition (OBLIGATOIRE) */
+.card-work .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Card inner */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Hover image */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+}
+
+/* Hover outer */
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
